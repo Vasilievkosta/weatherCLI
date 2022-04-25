@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "CLI for getting weather",
   "main": "index.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
-	"start": "node index.js",
+    "start": "node weather.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-	"cli",
-	"weather"
+    "cli",
+    "weather"
   ],
   "author": "vkv",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "chalk": "^5.0.1",
+    "dedent-js": "^1.0.1"
+  }
 }
